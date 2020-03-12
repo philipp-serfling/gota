@@ -22,7 +22,7 @@
 
 package main
 
-import "github.com/bzon/gota/cmd"
+import "github.com/philipp-serfling/gota/cmd"
 
 func main() {
 	cmd.Execute()

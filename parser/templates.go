@@ -224,7 +224,7 @@ const indexHTMLTemplateString = `<!DOCTYPE HTML5>
                     <div style="width: 100%; display: block">
                         <div class="logo-title mdl-card__title-text">{{.Name}}</div>
 						{{if .IsIOS}}
-                        <a href="itms-services://?action=download-manifest&amp;url={{.PlistURL}}" class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        <a href="itms-services://?action=download-manifest&amp;url={{.PlistURL}}" class="mdl-button mdl-button--raised mdl-button--colored">
                                 Install
                         </a>
 						{{else}}
@@ -296,11 +296,7 @@ const indexHTMLTemplateString = `<!DOCTYPE HTML5>
                     element: document.getElementById('qr'),
                     background: 'white',
                     size: 200,
-                    {{if .IsIOS}}
-                    value: '{{.PlistURL}}'
-                    {{else}}
-                    value: '{{.DownloadURL}}'
-                    {{end}}
+                    value: '{{.IndexURL}}'
                 });
             })();
         </script>

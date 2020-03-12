@@ -28,7 +28,7 @@ import (
 	"os"
 	"strings"
 
-	nexuspkg "github.com/bzon/gota/nexus"
+	nexuspkg "github.com/philipp-serfling/gota/nexus"
 	"github.com/spf13/cobra"
 )
 

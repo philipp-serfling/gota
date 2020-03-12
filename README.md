@@ -1,9 +1,9 @@
 # About gota
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/bzon/gota)](https://goreportcard.com/report/github.com/bzon/gota)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/bzon/gota)
-[![GitHub tag](https://img.shields.io/github/tag/bzon/gota.svg)](https://github.com/bzon/gota/releases/)
-[![Total downloads](https://img.shields.io/github/downloads/bzon/gota/total.svg)](https://github.com/bzon/gota/releases/)
+[![Go Report Card](https://goreportcard.com/badge/github.com/philipp-serfling/gota)](https://goreportcard.com/report/github.com/philipp-serfling/gota)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/philipp-serfling/gota)
+[![GitHub tag](https://img.shields.io/github/tag/bzon/gota.svg)](https://github.com/philipp-serfling/gota/releases/)
+[![Total downloads](https://img.shields.io/github/downloads/bzon/gota/total.svg)](https://github.com/philipp-serfling/gota/releases/)
 
 Automate the beta testing distribution of your Android and iOS application files.
 
@@ -29,13 +29,13 @@ __gota__ automatically detects the build information of your ipa or apk files an
 
 ### Manual Installation
 
-Get the executable binary for your platform from the [Release Page](https://github.com/bzon/gota/releases/).
+Get the executable binary for your platform from the [Release Page](https://github.com/philipp-serfling/gota/releases/).
 
 #### Linux
 
 ```bash
 # downloading via wget
-wget https://github.com/bzon/gota/releases/download/0.1.6/gota-linux-amd64
+wget https://github.com/philipp-serfling/gota/releases/download/0.1.6/gota-linux-amd64
 
 # rename the executable
 mv gota-linux-amd64 gota
@@ -51,7 +51,7 @@ gota version v0.1.6 linux/amd64
 
 ```bash
 # downloading via wget
-wget https://github.com/bzon/gota/releases/download/0.1.6/gota-windows-amd64.exe
+wget https://github.com/philipp-serfling/gota/releases/download/0.1.6/gota-windows-amd64.exe
 
 # rename the executable
 mv gota-windows-amd64.exe gota.exe
@@ -67,7 +67,7 @@ gota version v0.1.6 windows/amd64
 
 ```bash
 # downloading via wget
-wget https://github.com/bzon/gota/releases/download/0.1.6/gota-darwin-amd64
+wget https://github.com/philipp-serfling/gota/releases/download/0.1.6/gota-darwin-amd64
 
 # rename the executable
 mv gota-darwin-amd64 gota
@@ -81,7 +81,7 @@ gota version v0.1.6 darwin/amd64
 
 ### Go Installation
 
-go get github.com/bzon/gota
+go get github.com/philipp-serfling/gota
 
 ### Help Flags
 

@@ -83,6 +83,7 @@ func (n *Nexus) NexusUploadAssets(app *parser.MobileApp, destBaseDir string) ([]
 	appSitePath := buildDir + "/" + filepath.Base(app.File)
 	appIndexHTMLSitePath := buildDir + "/" + parser.IndexHTMLFile
 	app.DownloadURL = n.getRepoURL() + "/" + appSitePath
+	app.IndexURL = n.getRepoURL() + "/" + appIndexHTMLSitePath
 
 	// default directory of assets
 	assetsDir := parser.AndroidAssetsDir

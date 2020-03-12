@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bzon/gota/parser"
+	"github.com/philipp-serfling/gota/parser"
 	"github.com/bzon/ipapk"
 )
 

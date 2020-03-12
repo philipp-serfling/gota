@@ -30,7 +30,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/bzon/gota/s3"
+	"github.com/philipp-serfling/gota/s3"
 )
 
 var upload s3.Upload

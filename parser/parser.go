@@ -50,6 +50,7 @@ type MobileApp struct {
 	UploadDate  string
 	DownloadURL string
 	PlistURL    htmltemp.URL
+	IndexURL string
 	File        string
 	Changelogs  []Changelog
 }

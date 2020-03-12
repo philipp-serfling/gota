@@ -28,7 +28,7 @@ import (
 
 	"github.com/bzon/ipapk"
 
-	"github.com/bzon/gota/parser"
+	"github.com/philipp-serfling/gota/parser"
 )
 
 func NewMobileAppParser() *parser.MobileApp {

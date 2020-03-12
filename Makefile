@@ -9,7 +9,7 @@ COMMIT=$(shell git rev-parse HEAD)
 BRANCH=$(shell git rev-parse --abbrev-ref HEAD)
 
 # Symlink into GOPATH
-GITHUB_USERNAME=bzon
+GITHUB_USERNAME=philipp-serfling
 BUILD_DIR=${GOPATH}/src/github.com/${GITHUB_USERNAME}/${BINARY}
 
 # Setup the -ldflags option for go build here, interpolate the variable values
