@@ -70,6 +70,7 @@ const indexHTMLTemplateString = `<!DOCTYPE HTML5>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
         <style>
             @media only screen and (max-width: 600px) {
                 .table-container {
@@ -215,7 +216,8 @@ const indexHTMLTemplateString = `<!DOCTYPE HTML5>
         <div class="main-container">
             <!-- Release Details -->
             <div class="demo-card-wide mdl-card mdl-shadow--1dp logo-wrapper" style="margin: 0 auto; text-align: center; margin-bottom: 5px">
-                <div class="mdl-card__title" style="margin: 0 auto; width: 100%; height: inherit; display: block">
+            <div style="width: 100%;height: auto;display: flex;" class="mdl-card__title">
+                <div style="margin: 0 auto;/* width: 50%; */height: inherit;display: block;">
                     <div style="width: 100%; display: block; margin: 0 auto">
                         <div class="logo" style="margin: 0 auto"></div>
                     </div>
@@ -232,6 +234,8 @@ const indexHTMLTemplateString = `<!DOCTYPE HTML5>
 						{{end}}
                     </div>
                 </div>
+                <canvas id="qr" height="200" width="200"></canvas>
+            </div>
             </div>
             <table class="mdl-data-table mdl-js-data-table table-container release-note">
                 <tbody>
@@ -285,5 +289,20 @@ const indexHTMLTemplateString = `<!DOCTYPE HTML5>
             </table>
 			{{end}}
         </div>
+        
+        <script>
+            (function() {
+                var qr = new QRious({
+                    element: document.getElementById('qr'),
+                    background: 'white',
+                    size: 200,
+                    {{if .IsIOS}}
+                    value: '{{.PlistURL}}'
+                    {{else}}
+                    value: '{{.DownloadURL}}'
+                    {{end}}
+                });
+            })();
+        </script>
     </body>
 </html>`
