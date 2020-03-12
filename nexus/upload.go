@@ -30,7 +30,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/philipp-serfling/gota/parser"
+	"github.com/bzon/gota/parser"
 )
 
 // Nexus contains the fields requied for accessing a nexus server
