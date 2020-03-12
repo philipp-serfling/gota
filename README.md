@@ -1,3 +1,8 @@
+# Difference to original project
+* Add QR Code in index.html
+* Removed ripple effect on download button to solve issue that you have to double tap on mobile safari
+
+
 # About gota
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/philipp-serfling/gota)](https://goreportcard.com/report/github.com/philipp-serfling/gota)
@@ -35,7 +40,7 @@ Get the executable binary for your platform from the [Release Page](https://gith
 
 ```bash
 # downloading via wget
-wget https://github.com/philipp-serfling/gota/releases/download/0.1.6/gota-linux-amd64
+wget https://github.com/philipp-serfling/gota/releases/download/0.1.7/gota-linux-amd64
 
 # rename the executable
 mv gota-linux-amd64 gota
@@ -44,14 +49,14 @@ mv gota-linux-amd64 gota
 ./gota --version
 
 # command output
-gota version v0.1.6 linux/amd64
+gota version v0.1.7 linux/amd64
 ```
 
 #### Windows
 
 ```bash
 # downloading via wget
-wget https://github.com/philipp-serfling/gota/releases/download/0.1.6/gota-windows-amd64.exe
+wget https://github.com/philipp-serfling/gota/releases/download/0.1.7/gota-windows-amd64.exe
 
 # rename the executable
 mv gota-windows-amd64.exe gota.exe
@@ -60,14 +65,14 @@ mv gota-windows-amd64.exe gota.exe
 gota.exe --version
 
 # command output
-gota version v0.1.6 windows/amd64
+gota version v0.1.7 windows/amd64
 ```
 
 #### OSX
 
 ```bash
 # downloading via wget
-wget https://github.com/philipp-serfling/gota/releases/download/0.1.6/gota-darwin-amd64
+wget https://github.com/philipp-serfling/gota/releases/download/0.1.7/gota-darwin-amd64
 
 # rename the executable
 mv gota-darwin-amd64 gota
@@ -76,7 +81,7 @@ mv gota-darwin-amd64 gota
 ./gota --version
 
 # command output
-gota version v0.1.6 darwin/amd64
+gota version v0.1.7 darwin/amd64
 ```
 
 ### Go Installation
