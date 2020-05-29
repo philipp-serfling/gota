@@ -296,7 +296,11 @@ const indexHTMLTemplateString = `<!DOCTYPE HTML5>
                     element: document.getElementById('qr'),
                     background: 'white',
                     size: 200,
-                    value: '{{.IndexURL}}'
+                    {{if .IsIOS}}
+                    value: 'itms-services://?action=download-manifest&amp;url={{.PlistURL}}'
+                    {{else}}
+                    value: '{{.DownloadURL}}'
+                    {{end}}
                 });
             })();
         </script>
